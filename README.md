@@ -3,4 +3,7 @@
 display a webpage from esp
 
 
-I am just aan het kutten
+even dit doen om de WiFi.h library te downloaden:
+https://registry.platformio.org/libraries/arduino-libraries/WiFi/installation
+
+
