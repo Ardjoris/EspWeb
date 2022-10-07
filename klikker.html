@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>Page Title</title>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+    <style>
+
+        .containerClass {
+            text-align: center;
+            /* color: blue;
+            background-color: rgb(124, 59, 59); */
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="header" class="containerClass">
+        <h1> The Klikker </h1>
+
+        <button type="button" onclick="klickOne()">Click Me!</button>
+        <button type="button" onclick="deleteObject()">Delete!</button>
+    </div>
+
+
+
+</body>
+
+<script>
+       
+       let header = document.querySelector("#header")
+       let newDiv = document.createElement("div")
+
+   function klickOne() {
+         console.log("klik")
+      
+      
+
+      let rows = 1
+        let maxRow = 5
+     
+        while (rows <= 10){
+        console.log("werktdit?")
+        let p = document.createElement ("p")
+        p.innerText = ("doet het")
+        newDiv.append(p)
+        header.append(newDiv)
+        rows++
+        }
+    }
+   function deleteObject() {
+    
+    newDiv.remove()
+
+
+
+   }
+
+        
+    
+    // newDiv.append(p)
+    //      }
+    //     header.append(newDiv)
+
+</script>
+
+
+
+</html>
